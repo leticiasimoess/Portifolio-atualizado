@@ -1,0 +1,98 @@
+// Definição de variáveis
+
+$color-html5: #e34c26
+$color-css3: #2965f1
+$color-javascript: #f0db4f
+$color-react: #61dafb
+$color-sass: #c69
+
+.projects
+  text-align: center
+  justify-content: center
+  font-family: "Londrina Outline", sans-serif
+
+  h2
+    font-size: 28px
+    margin-bottom: 20px
+    text-align: center
+    margin-top: 5rem
+
+  .paragraph-4
+    font-family: "Sora", sans-serif
+    font-size: 11.5px
+    color: #060606
+    margin-bottom: 30px
+    text-align: center
+    font-weight: 500
+
+  .project-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 30px
+    padding: 0 70px
+
+    .project
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 1rem
+      border:  solid 1px 
+
+      h5
+        color: #f63ab1
+        margin-top: 1rem
+        font-size: 20px
+        font-family: "Teko", sans-serif
+        font-weight: 700
+
+      .buttons-container
+        display: flex
+        justify-content: space-around
+        margin-left: 15rem
+        cursor: pointer
+        margin-top: 1rem
+
+      .button-github
+        background: transparent
+        font-size: 17px
+        margin-right: 1rem
+        border: none
+
+      .button-project
+        background: transparent
+        font-size: 19px
+        border: none
+
+      .project-image
+        width: 300px
+        height: 300px
+
+      .description
+        font-family: "Sora", sans-serif
+        font-size: 11.5px
+        color: #060606
+        margin-top: 1rem
+        text-align: center
+        font-weight: 500
+
+      .languages
+        font-size: 25px
+        display: flex
+        align-items: center
+        margin-top: 18px
+
+// Estilos para ícones de linguagem
+.html5-icon
+  color: $color-html5
+
+.css3-icon
+  color: $color-css3
+
+.javascript-icon
+  color: $color-javascript
+
+.react-icon
+  color: $color-react
+
+.sass-icon
+  color: $color-sass

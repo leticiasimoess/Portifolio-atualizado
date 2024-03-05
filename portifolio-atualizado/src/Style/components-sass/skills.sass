@@ -1,0 +1,95 @@
+@use '../variables'
+@use '../mixins'
+
+.skills
+    max-width: 900px // Ajuste a largura máxima conforme necessário
+    margin: 0 auto
+    text-align: center // Para centralizar o texto
+    font-family: 'Sora', sans-serif // Fonte 'Sora'
+    margin-top: 100px
+
+    h2
+        font-size: 25px
+        margin-bottom: 28px // Adiciona espaçamento abaixo da seção
+        color: #010101 // Cor do texto
+        justify-content: center
+
+    .legend
+        font-size: 11.5px
+        color: #020202
+        margin-bottom: 10px
+        font-family: "Sora", sans-serif
+        font-weight: 500 
+        text-align: justify
+
+    .skills-grid
+        margin-top: 30px
+        display: grid
+        flex-wrap: wrap
+        grid-template-columns: repeat(4, 1fr) // Define duas colunas com largura igual
+        gap: 30px // Adicione espaçamento entre as colunas
+
+    .skills-card
+        @include mixins.center
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 20px
+        border: 1px solid #090909
+        border-radius: 3px
+
+        h3
+            margin-top: 10px
+            margin-bottom: 1rem
+
+        svg
+            font-size: 5rem
+
+    #html
+        svg
+            color: #E44D26
+
+    #css
+        svg
+            color: #1572B6
+
+    #bootstrap
+        svg
+            color: #7952B3
+
+    #js
+        svg
+            color: #F0DB4F
+
+    #node
+        svg
+            color: #355e03
+
+    #sass
+        svg
+            color: #d81e84
+
+    #react
+        svg
+            color: #61DAFB
+
+    #styled
+        svg
+            color: #e05382
+
+    #nextjs
+        svgcolor: #0e0e0e
+
+    #mysql
+        svg
+            color: #1707f8
+
+    #c
+        svg
+            font-size: 4rem
+            margin-top: 1rem
+            color: #7a7d7e
+
+    #git
+        svg
+            color: #e87509
